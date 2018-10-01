@@ -3,7 +3,8 @@
     "version": "1.0",
     "description": "Foclóir a bhaineann usáid as tearma.ie",
     "permissions": [
-        "storage"
+        "storage",
+        "declarativeContent"
     ],
     "background": {
         "scripts": [
