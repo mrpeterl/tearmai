@@ -13,6 +13,10 @@
     padding-bottom: 50px;
 }
 
+.field{
+    background-color:#e8e9ea;
+}
+
 .submit{
     width: 100px;
     height: 50px;
@@ -25,7 +29,7 @@ label{
     font-size: 13px;
     font-weight: 100;
     font-style: normal;
-    color: #5f5f60;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     opacity: 1;
 }
