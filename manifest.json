@@ -4,7 +4,8 @@
     "description": "Foclóir a bhaineann usáid as tearma.ie",
     "permissions": [
         "storage",
-        "declarativeContent"
+        "declarativeContent",
+        "activeTab"
     ],
     "background": {
         "scripts": [
