@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      button {
-        height: 30px;
-        width: 30px;
-        outline: none;
-      }
-      .main {
-        height: 200px;
-        width: 400px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="main"></div>
-    <script src="popup.js"></script>
-  </body>
+
+<head>
+  <style>
+    button {
+      height: 30px;
+      width: 30px;
+      outline: none;
+    }
+
+    .main {
+      height: 300px;
+      width: 400px;
+      background-color: #eff0f2;
+    }
+  </style>
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="main">
+  <div>
+    <h1 class="title">T&eacute;arma&iacute;</h1>
+    <form>
+      <div class="form-group language">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control language" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <script src="popup.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+</body>
+
 </html>
