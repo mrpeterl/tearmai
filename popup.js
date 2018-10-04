@@ -3,3 +3,5 @@
 // found in the LICENSE file.
 
 'use strict';
+
+let searchBtn = document.getElementById('searchBtn');
