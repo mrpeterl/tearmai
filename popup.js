@@ -6,10 +6,12 @@
 
 let searchBtn = document.getElementById('searchBtn');
 let form = document.getElementById('searchForm');
-let language = document.getElementById('languageSelect').nodeValue;
-let word = document.getElementById('inputWord').value;
 
 searchBtn.onclick = function(){
+    let language = document.getElementById('languageSelect').value;
+    let word = document.getElementById('inputWord').value;
+    console.log(language);
+    console.log(word);
     let response = makeRequest(language, word);
     console.log(response);
     
