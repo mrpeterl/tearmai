@@ -5,3 +5,24 @@
 'use strict';
 
 let searchBtn = document.getElementById('searchBtn');
+let form = document.getElementById('searchForm');
+let language = document.getElementById('languageSelect').nodeValue;
+let word = document.getElementById('inputWord').value;
+
+searchBtn.onclick = function(){
+    let response = makeRequest(language, word);
+    console.log(response);
+    
+}
+
+
+function makeRequest(language, word){
+    var params = { term:word, lang:language };
+    var str = jQuery.param( params );
+    var theUrl = "http://www.syzible.com/tearma/backend?";
+    theUrl = theUrl.concat(str);
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
