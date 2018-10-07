@@ -54,3 +54,10 @@ button {
     background-color: #d6d6d6;
     background-image: url("images/background.png");
 }
+
+.results {
+    height: 350px;
+    width: 300px;
+    background-color: #d6d6d6;
+    background-image: url("images/background.png");
+}
