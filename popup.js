@@ -44,3 +44,7 @@ function parseJSON(json) {
     results = JSON.parse(json);
     return results;
 }
+
+function displayResults(results) {
+    
+}
