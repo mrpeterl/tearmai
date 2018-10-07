@@ -23,25 +23,26 @@
 <body class="main">
   <div>
     <img class="logo" src="images/logo.png">
-    <form>
+    <form id="searchForm">
       <div class="form-group language">
         <label for="languageSelect">Teanga - Language</label>
         <select id="languageSelect" class="form-control field">
             <option selected>Choose...</option>
-            <option>Gaeilge - Irish</option>
-            <option>B&eacute;arla - English</option>
+            <option value="ga">Gaeilge - Irish</option>
+            <option value="en">B&eacute;arla - English</option>
         </select>
       </div>
       <div class="form-group text">
         <label for="inputWord">Focail - Word</label>
         <input type="text" class="form-control text field" id="inputWord">
       </div>
-      <button type="submit" class="btn btn-primary submit">Submit</button>
+      <button id="searchBtn" class="btn btn-primary submit">Submit</button>
     </form>
+    <p id="legend"></p>
   </div>
-  <script src="popup.js"></script>
-  <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="popup.js"></script>
 </body>
 
 </html>
