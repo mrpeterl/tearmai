@@ -30,6 +30,7 @@ function makeRequest(language, word) {
     var params = { term: word, lang: language, limit: 3 };
     var str = jQuery.param(params);
     var theUrl = "http://www.syzible.com/tearma/backend?";
+    
     theUrl = theUrl.concat(str);
 
     console.log(theUrl);
@@ -37,3 +38,9 @@ function makeRequest(language, word) {
     var json = getJSON(theUrl);
     console.log(json);
 };
+
+function parseJSON(json) {
+    var results = [];
+    results = JSON.parse(json);
+    return results;
+}
