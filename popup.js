@@ -35,5 +35,6 @@ function makeRequest(language, word) {
     console.log(theUrl);
 
     var json = getJSON(theUrl);
+   
     console.log(json);
 };
